@@ -1,0 +1,19 @@
+﻿@page
+@using MortenJuulS1.WebWithCats.Logic;
+@{
+    Cat cat = new Cat();
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="cat">
+        <h3>@cat.Header</h3>
+        <img src="@cat.UrlToPicture" alt="@cat.AltText" />
+        <p>@cat.Description</p>
+    </div>
+</body>
+</html>
