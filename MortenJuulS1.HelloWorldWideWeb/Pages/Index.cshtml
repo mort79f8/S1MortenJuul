@@ -1,0 +1,16 @@
+﻿@page
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>hello World</h1>
+    <p>Det er i dag d.@DateTime.Now.ToLongDateString() og klokken er @DateTime.Now.ToShortTimeString()</p>
+    @{ 
+        Random rngNumber = new Random();
+    }
+    <p>Du slår: @rngNumber.Next(1,7) med en 6 side terning.</p>
+</body>
+</html>
