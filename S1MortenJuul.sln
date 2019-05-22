@@ -103,7 +103,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MortenJuulS1.WebWithCats", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MortenJuulS1.RoutingAndData", "MortenJuulS1.RoutingAndData\MortenJuulS1.RoutingAndData.csproj", "{E9025F07-6884-4D9A-A371-765334CDB4E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortenJuulS1.Reader.Ex1", "MortenJuulS1.Reader.Ex1\MortenJuulS1.Reader.Ex1.csproj", "{AC15E754-D341-41FA-B665-6679075591D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MortenJuulS1.Reader.Ex1", "MortenJuulS1.Reader.Ex1\MortenJuulS1.Reader.Ex1.csproj", "{AC15E754-D341-41FA-B665-6679075591D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortenJuulS1.Reader.Ex2", "MortenJuulS1.Reader.Ex2\MortenJuulS1.Reader.Ex2.csproj", "{60661462-7D4E-4E72-8A9B-04CE05CF8920}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -315,6 +317,10 @@ Global
 		{AC15E754-D341-41FA-B665-6679075591D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC15E754-D341-41FA-B665-6679075591D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC15E754-D341-41FA-B665-6679075591D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60661462-7D4E-4E72-8A9B-04CE05CF8920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60661462-7D4E-4E72-8A9B-04CE05CF8920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60661462-7D4E-4E72-8A9B-04CE05CF8920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60661462-7D4E-4E72-8A9B-04CE05CF8920}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
