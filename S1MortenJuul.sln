@@ -97,9 +97,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MortenJuulS1.Classes2.Ex4",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MortenJuulS1.MethodsParamModifier.Ex1", "MortenJuulS1.MethodsParamModifier.Ex1\MortenJuulS1.MethodsParamModifier.Ex1.csproj", "{56693F34-24A7-4D42-9E3C-421EF3D3C285}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortenJuulS1.HelloWorldWideWeb", "MortenJuulS1.HelloWorldWideWeb\MortenJuulS1.HelloWorldWideWeb.csproj", "{13284DCE-CC67-45A1-A8FC-67D12A9D20FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MortenJuulS1.HelloWorldWideWeb", "MortenJuulS1.HelloWorldWideWeb\MortenJuulS1.HelloWorldWideWeb.csproj", "{13284DCE-CC67-45A1-A8FC-67D12A9D20FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortenJuulS1.WebWithCats", "MortenJuulS1.WebWithCats\MortenJuulS1.WebWithCats.csproj", "{06BF6139-EC92-46BE-AADA-F4B4BC3165C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MortenJuulS1.WebWithCats", "MortenJuulS1.WebWithCats\MortenJuulS1.WebWithCats.csproj", "{06BF6139-EC92-46BE-AADA-F4B4BC3165C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortenJuulS1.RoutingAndData", "MortenJuulS1.RoutingAndData\MortenJuulS1.RoutingAndData.csproj", "{E9025F07-6884-4D9A-A371-765334CDB4E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -303,6 +305,10 @@ Global
 		{06BF6139-EC92-46BE-AADA-F4B4BC3165C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06BF6139-EC92-46BE-AADA-F4B4BC3165C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06BF6139-EC92-46BE-AADA-F4B4BC3165C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9025F07-6884-4D9A-A371-765334CDB4E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9025F07-6884-4D9A-A371-765334CDB4E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9025F07-6884-4D9A-A371-765334CDB4E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9025F07-6884-4D9A-A371-765334CDB4E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
