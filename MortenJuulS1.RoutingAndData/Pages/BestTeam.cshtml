@@ -1,4 +1,8 @@
-﻿@page
+﻿@page "{teamName}"
+@{
+    string teamName = (string)RouteData.Values["teamName"];
+}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +10,32 @@
     <title></title>
 </head>
 <body>
+    @{ 
+        switch (teamName)
+        {
+            case "Aab":
+                <p>Aab er fra Aalborg</p>
+                break;
+            case "Brøndby IF":
+                <p>Brøndby IF er fra Brøndby</p>
+                break;
+            case "FC København":
+                <p>FC København er fra København</p>
+                break;
+            case "AGF":
+                <p>AGF er fra et eller andet sted</p>
+                break;
+            case "Vendsyssel IF":
+                <p>Vendsyssel IF er fra et sted i vendsyssel</p>
+                break;
+            case "Hobro IK":
+                <p>Hobro IK er fra Hobro</p>
+                break;
+            default:
+                <p>Jeg kender ikke det hold</p>
+                break;
+        }
+    }
 
 </body>
 </html>
