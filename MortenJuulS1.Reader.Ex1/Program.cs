@@ -11,23 +11,23 @@ namespace MortenJuulS1.Reader.Ex1
         {
             string path = @"F:\C# - Skole\git\S1MortenJuul\MortenJuulS1.Reader.Ex1\RandomNumbers.txt";
 
-            int sumOfNumbers = 0;
-            int amountOfNumbers = 0;
+            //int sumOfNumbers = 0;
+            //int amountOfNumbers = 0;
             List<int> myListOfNumbers = new List<int>();
 
-            using (StreamReader reader = new StreamReader(path, Encoding.Default))
-            {
-                string n = "";
-                while ((n = reader.ReadLine()) != null)
-                {
-                    int.TryParse(n, out int aNumber);
-                    sumOfNumbers += aNumber;
-                    amountOfNumbers++;
-                }
-            }
-            Console.WriteLine($"Sum of all the numbers: {sumOfNumbers}");
-            Console.WriteLine($"Average of all the numbers: {sumOfNumbers / amountOfNumbers}");
-            Console.WriteLine();
+            //using (StreamReader reader = new StreamReader(path, Encoding.Default))
+            //{
+            //    string n = "";
+            //    while ((n = reader.ReadLine()) != null)
+            //    {
+            //        int.TryParse(n, out int aNumber);
+            //        sumOfNumbers += aNumber;
+            //        amountOfNumbers++;
+            //    }
+            //}
+            //Console.WriteLine($"Sum of all the numbers: {sumOfNumbers}");
+            //Console.WriteLine($"Average of all the numbers: {sumOfNumbers / amountOfNumbers}");
+            //Console.WriteLine();
 
             if (GetNumbersFromFile(path, out myListOfNumbers))
             {
@@ -36,6 +36,7 @@ namespace MortenJuulS1.Reader.Ex1
                 {
                     Console.WriteLine(number);
                 }
+
             }
 
         }
@@ -52,8 +53,15 @@ namespace MortenJuulS1.Reader.Ex1
                 string n = "";
                 while ((n = reader.ReadLine()) != null)
                 {
-                    int.TryParse(n, out int aNumber);
-                    numbers.Add(aNumber);
+                    if(int.TryParse(n, out int aNumber))
+                    {
+                        numbers.Add(aNumber);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Woops not a whole number!");
+                    }
+                    
                 }
             }
             listOfNumbers = numbers;
