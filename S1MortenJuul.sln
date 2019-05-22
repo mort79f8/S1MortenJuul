@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.271
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstHelloWorld", "MyFirstHelloWorld\MyFirstHelloWorld.csproj", "{E8B798A1-0E50-413D-B73A-23B842F398B8}"
 EndProject
@@ -101,7 +101,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MortenJuulS1.HelloWorldWide
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MortenJuulS1.WebWithCats", "MortenJuulS1.WebWithCats\MortenJuulS1.WebWithCats.csproj", "{06BF6139-EC92-46BE-AADA-F4B4BC3165C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortenJuulS1.RoutingAndData", "MortenJuulS1.RoutingAndData\MortenJuulS1.RoutingAndData.csproj", "{E9025F07-6884-4D9A-A371-765334CDB4E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MortenJuulS1.RoutingAndData", "MortenJuulS1.RoutingAndData\MortenJuulS1.RoutingAndData.csproj", "{E9025F07-6884-4D9A-A371-765334CDB4E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortenJuulS1.Reader.Ex1", "MortenJuulS1.Reader.Ex1\MortenJuulS1.Reader.Ex1.csproj", "{AC15E754-D341-41FA-B665-6679075591D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -309,6 +311,10 @@ Global
 		{E9025F07-6884-4D9A-A371-765334CDB4E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9025F07-6884-4D9A-A371-765334CDB4E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9025F07-6884-4D9A-A371-765334CDB4E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC15E754-D341-41FA-B665-6679075591D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC15E754-D341-41FA-B665-6679075591D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC15E754-D341-41FA-B665-6679075591D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC15E754-D341-41FA-B665-6679075591D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
