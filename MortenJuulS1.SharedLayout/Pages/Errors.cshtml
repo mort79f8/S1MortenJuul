@@ -1,6 +1,7 @@
 ﻿@page "{errorCode:int}"
 @{
     int errorCode = int.Parse((string)RouteData.Values["errorCode"]);
+    ViewBag.Title = "Error Page";
 }
 
 <div id="main">
