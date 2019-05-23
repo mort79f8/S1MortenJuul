@@ -16,6 +16,7 @@ namespace MortenJuulS1.Reader.Ex3
             LongestFirstName((ConvertPersonInfoToListOfPerson(GetPersonInfoFromFile(path))));
             ShortestFirstName((ConvertPersonInfoToListOfPerson(GetPersonInfoFromFile(path))));
             LongestCombinedName((ConvertPersonInfoToListOfPerson(GetPersonInfoFromFile(path))));
+            ShortestCombinedName((ConvertPersonInfoToListOfPerson(GetPersonInfoFromFile(path))));
         }
 
         private static List<string> GetPersonInfoFromFile(string path)
@@ -132,6 +133,22 @@ namespace MortenJuulS1.Reader.Ex3
                 }
             }
             Console.WriteLine($"Personen med det længest navn er: {personCombined.FirstName} {personCombined.LastName}");
+        }
+
+        private static void ShortestCombinedName(List<Person> personList)
+        {
+            int shorestCombined = 1000;
+
+            Person personCombined = new Person();
+            foreach (var person in personList)
+            {
+                if (shorestCombined > person.FirstName.Length + person.LastName.Length)
+                {
+                    personCombined = person;
+                    shorestCombined = person.FirstName.Length + person.LastName.Length;
+                }
+            }
+            Console.WriteLine($"Personen med det mindste navn er: {personCombined.FirstName} {personCombined.LastName}");
         }
     }
 }
