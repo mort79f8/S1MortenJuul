@@ -38,6 +38,8 @@ namespace MortenJuulS1.Reader.Ex2
             Console.WriteLine($"Bredde:\t\t{Width}");
             CalculateVolume();
             CalculateSurface();
+            Console.WriteLine($"Rumfang:\t{Volume}");
+            Console.WriteLine($"Overflade:\t{Surface}");
         }
 
         public void CalculateVolume()
@@ -46,10 +48,12 @@ namespace MortenJuulS1.Reader.Ex2
             // Console.WriteLine($"Rumfang:\t{Volume}");
         }
 
-        private void CalculateSurface()
+        public void CalculateSurface()
         {
             Surface = (2 * Length) + (2 * Height) + (2 * Width);
-            Console.WriteLine($"Overflade:\t{Surface}");
+            // Console.WriteLine($"Overflade:\t{Surface}");
         }
+
+
     }
 }
