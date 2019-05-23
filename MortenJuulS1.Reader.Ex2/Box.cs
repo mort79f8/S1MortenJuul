@@ -19,6 +19,10 @@ namespace MortenJuulS1.Reader.Ex2
         public int Surface { get => surface; set => surface = value; }
 
 
+        public Box()
+        {
+
+        }
         public Box(int height, int length, int width)
         {
             Height = height;

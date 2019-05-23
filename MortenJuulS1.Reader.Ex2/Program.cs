@@ -11,7 +11,7 @@ namespace MortenJuulS1.Reader.Ex2
         {
             List<Box> boxes = new List<Box>();
             string path = @"F:\C# - Skole\git\S1MortenJuul\MortenJuulS1.Reader.Ex2\boxInfo.txt";
-
+            List<string> boxInfoList = new List<string>();
         }
 
         private static List<string> GetBoxInfoFromFile(string path)
@@ -36,5 +36,25 @@ namespace MortenJuulS1.Reader.Ex2
             return splittedInput;
         }
 
+        private static Box CreateABoxFromStringArray(string[] input)
+        {
+            int.TryParse(input[0], out int height);
+            int.TryParse(input[1], out int length);
+            int.TryParse(input[2], out int width);
+
+            return new Box(height, length, width);
+        }
+
+        private static List<Box> ConvertBoxInfoToListOfBox(List<string> listOfBoxInfo)
+        {
+            string[] split = new string[3];
+            List<Box> boxList = new List<Box>();
+            foreach (var box in listOfBoxInfo)
+            {
+                split = SplitBoxInfo(box);
+                boxList.Add(CreateABoxFromStringArray(split));
+            }
+            return boxList;
+        }
     }
 }
