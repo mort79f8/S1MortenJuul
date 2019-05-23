@@ -14,6 +14,7 @@ namespace MortenJuulS1.Reader.Ex3
             OldestPerson(ConvertPersonInfoToListOfPerson(GetPersonInfoFromFile(path)));
             YoungestPerson(ConvertPersonInfoToListOfPerson(GetPersonInfoFromFile(path)));
             LongestFirstName((ConvertPersonInfoToListOfPerson(GetPersonInfoFromFile(path))));
+            ShortestFirstName((ConvertPersonInfoToListOfPerson(GetPersonInfoFromFile(path))));
         }
 
         private static List<string> GetPersonInfoFromFile(string path)
@@ -99,6 +100,21 @@ namespace MortenJuulS1.Reader.Ex3
                 }
             }
             Console.WriteLine($"Personen med det længest fornavn er: {personLongest.FirstName}");
+        }
+
+        private static void ShortestFirstName(List<Person> personList)
+        {
+            int shortest = 1000;
+            Person personshortest = new Person();
+            foreach (var person in personList)
+            {
+                if (shortest > person.FirstName.Length)
+                {
+                    personshortest = person;
+                    shortest = person.FirstName.Length;
+                }
+            }
+            Console.WriteLine($"Personen med det mindste fornavn er: {personshortest.FirstName}");
         }
     }
 }
