@@ -43,7 +43,7 @@ namespace MortenJuulS1.Reader.Ex2
         public void CalculateVolume()
         {
             Volume = Length * Height * Width;
-            Console.WriteLine($"Rumfang:\t{Volume}");
+            // Console.WriteLine($"Rumfang:\t{Volume}");
         }
 
         private void CalculateSurface()

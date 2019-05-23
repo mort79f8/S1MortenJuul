@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 
 namespace MortenJuulS1.Reader.Ex2
@@ -21,6 +22,8 @@ namespace MortenJuulS1.Reader.Ex2
                 box.PrintInfo();
                 Console.WriteLine();
             }
+
+            Console.WriteLine($"Det mindste volume er: {LowestVolume(boxes)}");
         }
 
         private static List<string> GetBoxInfoFromFile(string path)
@@ -64,6 +67,17 @@ namespace MortenJuulS1.Reader.Ex2
                 boxList.Add(CreateABoxFromStringArray(split));
             }
             return boxList;
+        }
+
+        private static int LowestVolume(List<Box> listOfBoxes)
+        {
+            List<int> volumeList = new List<int>();
+            foreach (var box in listOfBoxes)
+            {
+                box.CalculateVolume();
+                volumeList.Add(box.Volume);
+            }
+            return volumeList.Min();
         }
     }
 }
