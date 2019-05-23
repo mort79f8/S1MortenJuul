@@ -11,10 +11,10 @@ namespace MortenJuulS1.Reader.Ex3
         static void Main(string[] args)
         {
             string path = @"D:\S1\Code\S1MortenJuul\MortenJuulS1.Reader.Ex3\persons.txt";
-
+            OldestPerson(ConvertPersonInfoToListOfPerson(GetPersonInfoFromFile(path)));
         }
 
-        private static List<string> GetBoxInfoFromFile(string path)
+        private static List<string> GetPersonInfoFromFile(string path)
         {
             List<string> personinfo = new List<string>();
 
@@ -55,14 +55,19 @@ namespace MortenJuulS1.Reader.Ex3
             return personList;
         }
 
-        private static int OldestPerson(List<Person> personList)
+        private static void OldestPerson(List<Person> personList)
         {
-            List<int> ages = new List<int>();
+            Person oldestPerson = new Person("untitled","untitled",0);
+
             foreach (var person in personList)
             {
-                ages.Add(person.Age);
+                if (oldestPerson.Age < person.Age)
+                {
+                    oldestPerson = person;
+                }
             }
-            return ages.Max();
+            Console.WriteLine($"Den ældste person er {oldestPerson.FirstName} {oldestPerson.LastName}");
+            
         }
         private static int YoungesttPerson(List<Person> personList)
         {
