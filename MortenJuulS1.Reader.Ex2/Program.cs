@@ -24,6 +24,7 @@ namespace MortenJuulS1.Reader.Ex2
             }
 
             Console.WriteLine($"Det mindste volume er: {LowestVolume(boxes)}");
+            Console.WriteLine($"Det højeste volume er: {HighestVolume(boxes)}");
         }
 
         private static List<string> GetBoxInfoFromFile(string path)
@@ -78,6 +79,16 @@ namespace MortenJuulS1.Reader.Ex2
                 volumeList.Add(box.Volume);
             }
             return volumeList.Min();
+        }
+        private static int HighestVolume(List<Box> listOfBoxes)
+        {
+            List<int> volumeList = new List<int>();
+            foreach (var box in listOfBoxes)
+            {
+                box.CalculateVolume();
+                volumeList.Add(box.Volume);
+            }
+            return volumeList.Max();
         }
     }
 }
