@@ -10,8 +10,17 @@ namespace MortenJuulS1.Reader.Ex2
         static void Main(string[] args)
         {
             List<Box> boxes = new List<Box>();
-            string path = @"F:\C# - Skole\git\S1MortenJuul\MortenJuulS1.Reader.Ex2\boxInfo.txt";
+            string path = @"D:\S1\Code\S1MortenJuul\MortenJuulS1.Reader.Ex2\boxInfo.txt";
             List<string> boxInfoList = new List<string>();
+
+            boxInfoList = GetBoxInfoFromFile(path);
+            boxes = ConvertBoxInfoToListOfBox(boxInfoList);
+
+            foreach (var box in boxes)
+            {
+                box.PrintInfo();
+                Console.WriteLine();
+            }
         }
 
         private static List<string> GetBoxInfoFromFile(string path)
