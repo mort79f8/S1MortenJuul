@@ -5,8 +5,24 @@
     <link href="~/css/style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width" />
     <link href="~/css/style.css" rel="stylesheet" />
+    <title>MyPage - @ViewBag.Title</title>
 </head>
 <body>
-    @RenderBody()
+    <div id="wrapper">
+        <nav>
+            <ul>
+                <li><a class="@(
+                ViewBag.ActivePage=="contact"?
+                "active":
+                null)" href="~/Contact">Contact us</a></li>
+                <li><a href="~/About">About us</a></li>
+            </ul>
+        </nav>
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>Copyright by WebMakerCompany 2009-@DateTime.Now.Year</p>
+        </footer>
+    </div>
 </body>
 </html>

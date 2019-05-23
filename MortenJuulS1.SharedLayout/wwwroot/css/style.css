@@ -23,3 +23,7 @@ footer p {
 footer {
     padding-bottom: 2px;
 }
+
+a.active{
+    color:orange;
+}

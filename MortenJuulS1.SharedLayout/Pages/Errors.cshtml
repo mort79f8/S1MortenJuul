@@ -2,33 +2,15 @@
 @{
     int errorCode = int.Parse((string)RouteData.Values["errorCode"]);
 }
-<!DOCTYPE html>
 
-<html>
-<head>
-    <link href="~/css/style.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width" />
-    <link href="~/css/style.css" rel="stylesheet" />
-    <title>Educational - Frontpage</title>
-</head>
-<body>
-    <div id="wrapper">
-        <div id="main">
-            <h1>Error Page</h1>
-            @if (errorCode == 404)
-            {
-                <p>Du har fået en error 404, det var da ikke godt!</p>
-            }
-            else
-            {
-                <p>Der er opstået en fejl med statuskode @errorCode</p>
-            }
-        </div>
-        <hr />
-        <footer>
-            <p>Copyright by WebMakerCompany 2009-@DateTime.Now.Year</p>
-        </footer>
-    </div>
-
-</body>
-</html>
+<div id="main">
+    <h1>Error Page</h1>
+    @if (errorCode == 404)
+    {
+        <p>Du har fået en error 404, det var da ikke godt!</p>
+    }
+    else
+    {
+        <p>Der er opstået en fejl med statuskode @errorCode</p>
+    }
+</div>
