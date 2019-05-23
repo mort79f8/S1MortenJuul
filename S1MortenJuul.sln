@@ -111,6 +111,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortenJuulS1.Reader.Ex3", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortenJuulS1.Writing.Ex1", "MortenJuulS1.Writing.Ex1\MortenJuulS1.Writing.Ex1.csproj", "{D5E08003-D3E0-4164-A4BA-22DCF45D3B0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortenJuulS1.ErrorPages", "MortenJuulS1.ErrorPages\MortenJuulS1.ErrorPages.csproj", "{AE0E4909-8011-40C8-A5F2-1CD22D7AF420}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -333,6 +335,10 @@ Global
 		{D5E08003-D3E0-4164-A4BA-22DCF45D3B0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5E08003-D3E0-4164-A4BA-22DCF45D3B0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5E08003-D3E0-4164-A4BA-22DCF45D3B0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE0E4909-8011-40C8-A5F2-1CD22D7AF420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE0E4909-8011-40C8-A5F2-1CD22D7AF420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE0E4909-8011-40C8-A5F2-1CD22D7AF420}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE0E4909-8011-40C8-A5F2-1CD22D7AF420}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

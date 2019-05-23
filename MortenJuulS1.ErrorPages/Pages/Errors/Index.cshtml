@@ -1,0 +1,21 @@
+﻿@page "{errorCode:int}"
+@{ 
+    int errorCode = int.Parse((string)RouteData.Values["errorCode"]);
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    @if (errorCode == 404)
+    {
+        <p>Du har fået en error 404, det var da ikke godt!</p>
+    }
+    else
+    {
+        <p>Der er opstået en fejl med statuskode @errorCode</p>
+    }
+</body>
+</html>
