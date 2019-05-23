@@ -8,7 +8,7 @@ namespace MortenJuulS1.Writing.Ex1
         static void Main(string[] args)
         {
             string path = @"D:\test\";
-            Log logBook = new Log(path);
+
 
 
             while (true)
@@ -18,6 +18,7 @@ namespace MortenJuulS1.Writing.Ex1
 
                 if (!CheckfileExists(path, fileName))
                 {
+                    Log logBook = new Log(path + fileName + ".txt");
                     if (fileName == "/exit")
                     {
                         System.Environment.Exit(0);
@@ -31,7 +32,7 @@ namespace MortenJuulS1.Writing.Ex1
 
                         if (logentry != "/end")
                         {
-                            logBook.WriteLine(path + fileName + ".txt", logentry);
+                            logBook.WriteLine(logentry);
                         }
                         else
                         {
