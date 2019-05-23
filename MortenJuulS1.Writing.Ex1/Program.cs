@@ -7,17 +7,25 @@ namespace MortenJuulS1.Writing.Ex1
     {
         static void Main(string[] args)
         {
-            string path = @"D:\S1\Code\S1MortenJuul\MortenJuulS1.Writing.Ex1\";
+            string path = @"D:\test\";
+            Log logBook = new Log(path);
 
-            Console.WriteLine("Indtast file navn:");
-            string fileName = Console.ReadLine();
-            if (CheckfileExists(path,fileName))
+
+            while (true)
             {
-                Console.WriteLine($"der er en file som hedder: {fileName}");
-            }
-            else
-            {
-                Console.WriteLine($"Kan ikke finde en file som hedder: {fileName}");
+                Console.WriteLine("Indtast file navn:");
+                string fileName = Console.ReadLine();
+
+                if (!CheckfileExists(path, fileName))
+                {
+                    Console.WriteLine("Indtast din log line:");
+                    string logentry = Console.ReadLine();
+                    logBook.WriteLine(path + fileName + ".txt", logentry);
+                }
+                else
+                {
+                    Console.WriteLine("der er allerede en fil med det navn");
+                }
             }
         }
 
