@@ -13,14 +13,32 @@ namespace MortenJuulS1.Writing.Ex1
 
             while (true)
             {
-                Console.WriteLine("Indtast file navn:");
+                Console.WriteLine("Indtast file navn (/exit for at afslutte):");
                 string fileName = Console.ReadLine();
 
                 if (!CheckfileExists(path, fileName))
                 {
-                    Console.WriteLine("Indtast din log line:");
-                    string logentry = Console.ReadLine();
-                    logBook.WriteLine(path + fileName + ".txt", logentry);
+                    if (fileName == "/exit")
+                    {
+                        System.Environment.Exit(0);
+                    }
+                    bool writingLog = true;
+                    Console.Clear();
+                    while (writingLog)
+                    {
+                        Console.WriteLine("Indtast din log line (/end for at stoppe med at skriv til loggen):");
+                        string logentry = Console.ReadLine();
+
+                        if (logentry != "/end")
+                        {
+                            logBook.WriteLine(path + fileName + ".txt", logentry);
+                        }
+                        else
+                        {
+                            writingLog = false;
+                        }
+                    }
+                    Console.Clear();
                 }
                 else
                 {
