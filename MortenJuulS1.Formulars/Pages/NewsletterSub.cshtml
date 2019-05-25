@@ -1,0 +1,19 @@
+﻿@page
+@{
+    if (Microsoft.AspNetCore.Http.HttpMethods.IsPost(HttpContext.Request.Method))
+    {
+        <h1>Tak for din mail adresse</h1>
+        string email = HttpContext.Request.Form["email"];
+        <p>Vi har tilføjet @email til vores kartotek.</p>
+    }
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>

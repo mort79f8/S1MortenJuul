@@ -6,6 +6,12 @@
     <title></title>
 </head>
 <body>
+    <form method="post" action="/NewsletterSub">
+        @Html.AntiForgeryToken();
+        <input type="email" name="email" />
+        <input type="submit" value="Indsend mail" />
+        
+    </form>
 
 </body>
 </html>
