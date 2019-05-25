@@ -107,13 +107,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MortenJuulS1.Reader.Ex1", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MortenJuulS1.Reader.Ex2", "MortenJuulS1.Reader.Ex2\MortenJuulS1.Reader.Ex2.csproj", "{60661462-7D4E-4E72-8A9B-04CE05CF8920}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortenJuulS1.Reader.Ex3", "MortenJuulS1.Reader.Ex3\MortenJuulS1.Reader.Ex3.csproj", "{EA91CE22-EA56-47EE-8D60-155E892BF415}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MortenJuulS1.Reader.Ex3", "MortenJuulS1.Reader.Ex3\MortenJuulS1.Reader.Ex3.csproj", "{EA91CE22-EA56-47EE-8D60-155E892BF415}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortenJuulS1.Writing.Ex1", "MortenJuulS1.Writing.Ex1\MortenJuulS1.Writing.Ex1.csproj", "{D5E08003-D3E0-4164-A4BA-22DCF45D3B0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MortenJuulS1.Writing.Ex1", "MortenJuulS1.Writing.Ex1\MortenJuulS1.Writing.Ex1.csproj", "{D5E08003-D3E0-4164-A4BA-22DCF45D3B0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortenJuulS1.ErrorPages", "MortenJuulS1.ErrorPages\MortenJuulS1.ErrorPages.csproj", "{AE0E4909-8011-40C8-A5F2-1CD22D7AF420}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MortenJuulS1.ErrorPages", "MortenJuulS1.ErrorPages\MortenJuulS1.ErrorPages.csproj", "{AE0E4909-8011-40C8-A5F2-1CD22D7AF420}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortenJuulS1.SharedLayout", "MortenJuulS1.SharedLayout\MortenJuulS1.SharedLayout.csproj", "{8B7A11FC-2EA3-4EDD-8690-C300F5746124}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MortenJuulS1.SharedLayout", "MortenJuulS1.SharedLayout\MortenJuulS1.SharedLayout.csproj", "{8B7A11FC-2EA3-4EDD-8690-C300F5746124}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortenJuulS1.Formulars", "MortenJuulS1.Formulars\MortenJuulS1.Formulars.csproj", "{C02ECB7E-B210-4573-BCB3-4598D31CD6B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -345,6 +347,10 @@ Global
 		{8B7A11FC-2EA3-4EDD-8690-C300F5746124}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B7A11FC-2EA3-4EDD-8690-C300F5746124}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B7A11FC-2EA3-4EDD-8690-C300F5746124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C02ECB7E-B210-4573-BCB3-4598D31CD6B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C02ECB7E-B210-4573-BCB3-4598D31CD6B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C02ECB7E-B210-4573-BCB3-4598D31CD6B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C02ECB7E-B210-4573-BCB3-4598D31CD6B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
