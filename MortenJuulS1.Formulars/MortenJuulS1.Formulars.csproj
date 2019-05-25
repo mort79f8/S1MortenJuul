@@ -10,4 +10,10 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="TimeMachine.FileLog">
+      <HintPath>..\..\TimeMachine\TimeMachine.FileLog\bin\Debug\netcoreapp2.2\TimeMachine.FileLog.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

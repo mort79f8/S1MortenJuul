@@ -1,10 +1,12 @@
 ﻿@page
 @{
+    TimeMachine.FileLog.FileLogger.Url = @"D:\test\mails.txt";
     if (Microsoft.AspNetCore.Http.HttpMethods.IsPost(HttpContext.Request.Method))
     {
         <h1>Tak for din mail adresse</h1>
         string email = HttpContext.Request.Form["email"];
         <p>Vi har tilføjet @email til vores kartotek.</p>
+        TimeMachine.FileLog.FileLogger.WriteLine(email);
     }
 }
 <!DOCTYPE html>
