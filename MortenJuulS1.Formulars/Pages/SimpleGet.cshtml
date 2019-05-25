@@ -1,4 +1,9 @@
 ﻿@page
+@{
+    string firstName = HttpContext.Request.Query["firstName"].ToString();
+    string lastName = HttpContext.Request.Query["lastName"].ToString();
+    string gender = HttpContext.Request.Query["gender"].ToString();
+}
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +11,30 @@
     <title></title>
 </head>
 <body>
-
+    <h1>@firstName</h1>
+    <form>
+        <label for="firstName">Fornavn:</label><br />
+        <input type="text" name="firstName" /><br />
+        <label for="lastName">Efternavn</label><br />
+        <input type="text" name="lastName" /><br />
+        <input type="radio" name="gender" value="kvinde"/>
+        <label for=" kvinde">Kvinde</label><br />
+        <input type="radio" name="gender" value="mand" />
+        <label for=" mand">Mand</label><br />
+        <input type="radio" name="gender" value="andet" />
+        <label for=" andet">Andet</label><br />
+        <input type="submit" value="Submit" />
+    </form>
+    @{
+        if (firstName != "")
+        {
+            <p>Hejsa @firstName @lastName hvordan har du det? jeg kan se du er en @gender. Jeg håber du nyder det gode vejr.</p>
+        }
+        else
+        {
+            <p>Det er et dejligt vejr idag syntes du ikke?</p>
+        }
+    }
+    
 </body>
 </html>
