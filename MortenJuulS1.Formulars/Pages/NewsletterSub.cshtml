@@ -1,6 +1,7 @@
 ﻿@page
 @{
-    TimeMachine.FileLog.FileLogger.Url = @"D:\test\mails.txt";
+    // TimeMachine.FileLog.FileLogger.Url = @"D:\test\mails.txt";
+    TimeMachine.FileLog.FileLogger.Url = @"wwwroot\mails\mails.txt";
     if (Microsoft.AspNetCore.Http.HttpMethods.IsPost(HttpContext.Request.Method))
     {
         <h1>Tak for din mail adresse</h1>
